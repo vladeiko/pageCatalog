@@ -1,0 +1,36 @@
+.nav-container {
+  background: white;
+  margin: 0 auto;
+}
+
+.nav {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 20px 32px;
+}
+
+.nav-logo-img {
+  zoom: 0.72;
+}
+
+.nav-link,
+.nav-link:link,
+.nav-link:visited {
+  font-size: 14px;
+  padding: 30px 35px;
+  text-align: center;
+  text-decoration: none;
+  color: $linkColor;
+  font-weight: bold;
+  box-sizing: border-box;
+}
+
+.nav-link:hover {
+  color: rgb(74, 97, 148);
+  border-bottom: 2px solid rgb(74, 97, 148);
+  transition: color 0.6s;
+}
