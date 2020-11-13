@@ -4,6 +4,7 @@
   margin: 0 auto;
   padding: 48px 32px;
   height: 232px;
+  // display: none;
 }
 
 .footer {
@@ -14,12 +15,8 @@
 
 .main-elements {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
-}
-
-.footer__logo {
-  width: 272px;
-  height: 164px;
 }
 
 .footer-logo-img {
@@ -28,14 +25,20 @@
   margin: 81px 0 0 0;
 }
 
+.links-info-block {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .footer__links {
   display: flex;
   flex-direction: column;
-  margin: 0 0 0 362px;
+  // margin: 0 0 0 362px;
 }
 
 .footer-info {
   margin: 0 0 0 60px;
+  box-sizing: border-box;
 }
 
 .footer-info__contact {
@@ -54,9 +57,7 @@
   margin: 5px 0;
 }
 
-.footer-link,
-.footer-link:link,
-.footer-link:visited {
+.footer-link {
   font-size: 16px;
   padding: 0 0 10px;
   margin: 0 0 16px;
@@ -69,9 +70,7 @@
   text-decoration: underline;
 }
 
-.mailto,
-.mailto:link,
-.mailto:visited {
+.mailto {
   font-size: 16px;
   text-decoration: none;
   color: white;
@@ -86,12 +85,17 @@
 .secondary-elements {
   display: flex;
   justify-content: space-between;
+  box-sizing: border-box;
   margin: 30px 0 0 0;
 }
 
-.info-link,
-.info-link:link,
-.info-link:visited {
+.info-links {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.info-link {
   font-size: 16px;
   padding: 0 0 10px;
   margin: 0 10px 16px;
@@ -102,4 +106,63 @@
 
 .info-link:hover {
   text-decoration: underline;
+}
+
+@media (max-width: 1050px) {
+  .footer-container {
+    height: auto;
+    text-align: center;
+    padding: 0;
+  }
+
+  .info-link {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+
+  .links-info-block {
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .main-elements {
+    justify-content: center;
+  }
+
+  .footer-info {
+    box-sizing: border-box;
+    margin: 0;
+
+    &__contact {
+      margin: 10px 0;
+    }
+  }
+
+  .footer-logo-img {
+    margin: 30px;
+    text-align: center;
+  }
+
+  .footer-info {
+    margin: 0 20px;
+  }
+
+  .secondary-elements {
+    margin: 0;
+  }
+
+  .footer-link {
+    margin: 0;
+    padding: 10px;
+  }
+
+  .copyright {
+    margin: 5px;
+  }
+
+  .info-link {
+    margin: 0 2px 0 0;
+    box-sizing: border-box;
+  }
 }

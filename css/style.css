@@ -111,7 +111,7 @@ body {
   background: white;
   margin: 0 auto;
   height: 62px;
-  font-size: 0.85rem;
+  font-size: 16px;
   font-weight: 700;
   border-bottom: 1px solid #dedede; }
 
@@ -128,9 +128,7 @@ body {
   padding: 0;
   zoom: 0.72; }
 
-.nav-link,
-.nav-link:link,
-.nav-link:visited {
+.nav-link {
   font-size: 14px;
   padding: 20px 35px;
   text-align: center;
@@ -143,6 +141,19 @@ body {
   color: #4a6194;
   border-bottom: 2px solid #4a6194;
   transition: color 0.6s; }
+
+@media (max-width: 1200px) {
+  .nav {
+    box-sizing: border-box;
+    justify-content: center;
+    flex-direction: column; }
+    .nav__links {
+      padding: 5px; }
+  .nav-link {
+    box-sizing: border-box;
+    padding: 0 5px; }
+  .nav-logo-img {
+    padding: 0 15px; } }
 
 .header-container {
   background-color: whitesmoke;
@@ -177,6 +188,24 @@ body {
   width: 100%;
   max-width: 330px; }
 
+@media (max-width: 1200px) {
+  .header {
+    margin: 0 auto; }
+    .header__title {
+      padding: 15px;
+      font-size: 32px; }
+  .header-input-container {
+    align-items: center;
+    padding: 0 0 25px 0;
+    flex-direction: column; }
+  .header__select {
+    padding: 2px;
+    margin: 5px; }
+  .header__input {
+    padding: 2px;
+    margin: 5px;
+    max-width: 230px; } }
+
 .content-container {
   background-color: whitesmoke;
   max-width: 1250px;
@@ -197,7 +226,8 @@ body {
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  box-sizing: border-box; }
 
 .content-box__element {
   margin: 15px 0 40px 0; }
@@ -253,6 +283,16 @@ body {
   color: #386de0;
   transition: color 0.6s; }
 
+@media (max-width: 1200px) {
+  .content {
+    text-align: center; }
+    .content__title {
+      font-size: 22px; }
+  .content-box {
+    justify-content: center; }
+    .content-box__element {
+      padding: 10px; } }
+
 .footer-container {
   background: #231e29;
   color: white;
@@ -267,24 +307,25 @@ body {
 
 .main-elements {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between; }
-
-.footer__logo {
-  width: 272px;
-  height: 164px; }
 
 .footer-logo-img {
   width: 139px;
   height: 24px;
   margin: 81px 0 0 0; }
 
+.links-info-block {
+  display: flex;
+  flex-wrap: wrap; }
+
 .footer__links {
   display: flex;
-  flex-direction: column;
-  margin: 0 0 0 362px; }
+  flex-direction: column; }
 
 .footer-info {
-  margin: 0 0 0 60px; }
+  margin: 0 0 0 60px;
+  box-sizing: border-box; }
 
 .footer-info__contact {
   margin: 0 0 90px; }
@@ -298,9 +339,7 @@ body {
 .footer-text {
   margin: 5px 0; }
 
-.footer-link,
-.footer-link:link,
-.footer-link:visited {
+.footer-link {
   font-size: 16px;
   padding: 0 0 10px;
   margin: 0 0 16px;
@@ -311,9 +350,7 @@ body {
 .footer-link:hover {
   text-decoration: underline; }
 
-.mailto,
-.mailto:link,
-.mailto:visited {
+.mailto {
   font-size: 16px;
   text-decoration: none;
   color: white;
@@ -326,11 +363,15 @@ body {
 .secondary-elements {
   display: flex;
   justify-content: space-between;
+  box-sizing: border-box;
   margin: 30px 0 0 0; }
 
-.info-link,
-.info-link:link,
-.info-link:visited {
+.info-links {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center; }
+
+.info-link {
   font-size: 16px;
   padding: 0 0 10px;
   margin: 0 10px 16px;
@@ -340,3 +381,38 @@ body {
 
 .info-link:hover {
   text-decoration: underline; }
+
+@media (max-width: 1050px) {
+  .footer-container {
+    height: auto;
+    text-align: center;
+    padding: 0; }
+  .info-link {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0; }
+  .links-info-block {
+    align-items: center;
+    flex-direction: column; }
+  .main-elements {
+    justify-content: center; }
+  .footer-info {
+    box-sizing: border-box;
+    margin: 0; }
+    .footer-info__contact {
+      margin: 10px 0; }
+  .footer-logo-img {
+    margin: 30px;
+    text-align: center; }
+  .footer-info {
+    margin: 0 20px; }
+  .secondary-elements {
+    margin: 0; }
+  .footer-link {
+    margin: 0;
+    padding: 10px; }
+  .copyright {
+    margin: 5px; }
+  .info-link {
+    margin: 0 2px 0 0;
+    box-sizing: border-box; } }

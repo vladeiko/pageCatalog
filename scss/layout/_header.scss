@@ -36,3 +36,30 @@
   width: 100%;
   max-width: 330px;
 }
+
+@media (max-width: 1200px) {
+  .header {
+    margin: 0 auto;
+    &__title {
+      padding: 15px;
+      font-size: 32px;
+    }
+  }
+
+  .header-input-container {
+    align-items: center;
+    padding: 0 0 25px 0;
+    flex-direction: column;
+  }
+
+  .header__select {
+    padding: 2px;
+    margin: 5px;
+  }
+
+  .header__input {
+    padding: 2px;
+    margin: 5px;
+    max-width: 230px;
+  }
+}
