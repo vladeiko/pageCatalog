@@ -282,3 +282,61 @@ body {
   display: flex;
   flex-direction: column;
   margin: 0 0 0 362px; }
+
+.footer-info {
+  margin: 0 0 0 60px; }
+
+.footer-info__contact {
+  margin: 0 0 90px; }
+
+.community-links {
+  padding: 10px 0; }
+
+.community-link {
+  margin: 10px 5px 10px; }
+
+.footer-text {
+  margin: 5px 0; }
+
+.footer-link,
+.footer-link:link,
+.footer-link:visited {
+  font-size: 16px;
+  padding: 0 0 10px;
+  margin: 0 0 16px;
+  text-decoration: none;
+  color: white;
+  box-sizing: border-box; }
+
+.footer-link:hover {
+  text-decoration: underline; }
+
+.mailto,
+.mailto:link,
+.mailto:visited {
+  font-size: 16px;
+  text-decoration: none;
+  color: white;
+  font-weight: normal;
+  box-sizing: border-box; }
+
+.mailto:hover {
+  text-decoration: underline; }
+
+.secondary-elements {
+  display: flex;
+  justify-content: space-between;
+  margin: 30px 0 0 0; }
+
+.info-link,
+.info-link:link,
+.info-link:visited {
+  font-size: 16px;
+  padding: 0 0 10px;
+  margin: 0 10px 16px;
+  text-decoration: none;
+  color: white;
+  box-sizing: border-box; }
+
+.info-link:hover {
+  text-decoration: underline; }
