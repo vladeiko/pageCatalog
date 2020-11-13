@@ -103,14 +103,16 @@ table {
   border-spacing: 0; }
 
 body {
-  background-color: #eeeeee;
-  font-family: Roboto, Arial, Helvetica, sans-serif, black;
+  background-color: whitesmoke;
+  font-family: "Open Sans", Arial, Helvetica, sans-serif, black;
   margin: 0 auto; }
 
 .nav-container {
   background: white;
   margin: 0 auto;
   height: 62px;
+  font-size: 0.85rem;
+  font-weight: 700;
   border-bottom: 1px solid #dedede; }
 
 .nav {
@@ -123,7 +125,7 @@ body {
   margin: 0 auto; }
 
 .nav-logo-img {
-  padding: 0 20px;
+  padding: 0;
   zoom: 0.72; }
 
 .nav-link,
@@ -143,8 +145,8 @@ body {
   transition: color 0.6s; }
 
 .header-container {
-  background-color: #eeeeee;
-  max-width: 1200px;
+  background-color: whitesmoke;
+  max-width: 1250px;
   font-family: "Lato", sans-serif;
   background-color: rgba(138, 199, 255, 0.034);
   margin: 0 auto; }
@@ -176,8 +178,8 @@ body {
   max-width: 330px; }
 
 .content-container {
-  background-color: #eeeeee;
-  max-width: 1200px;
+  background-color: whitesmoke;
+  max-width: 1250px;
   background-color: rgba(138, 199, 255, 0.034);
   margin: 0 auto; }
 
@@ -188,6 +190,7 @@ body {
 
 .content__title {
   font-size: 24px;
+  font-family: Roboto, Arial, Helvetica, sans-serif;
   padding: 10px 0 15px 0; }
 
 .content-box {
