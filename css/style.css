@@ -109,25 +109,28 @@ body {
 
 .nav-container {
   background: white;
-  margin: 0 auto; }
+  margin: 0 auto;
+  height: 62px;
+  border-bottom: 1px solid #dedede; }
 
 .nav {
   width: 100%;
-  max-width: 1200px;
+  max-width: 1100px;
+  height: 62px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 0 auto;
-  padding: 20px 32px; }
+  margin: 0 auto; }
 
 .nav-logo-img {
+  padding: 0 20px;
   zoom: 0.72; }
 
 .nav-link,
 .nav-link:link,
 .nav-link:visited {
   font-size: 14px;
-  padding: 30px 35px;
+  padding: 20px 35px;
   text-align: center;
   text-decoration: none;
   color: #856cb8;
@@ -138,3 +141,30 @@ body {
   color: #4a6194;
   border-bottom: 2px solid #4a6194;
   transition: color 0.6s; }
+
+.header-container {
+  background-color: #eeeeee;
+  max-width: 1200px;
+  background-color: rgba(138, 199, 255, 0.034);
+  margin: 0 auto; }
+
+.header {
+  margin: 0 auto;
+  max-width: 1100px;
+  font-size: 48px;
+  font-weight: normal; }
+
+.header__title {
+  margin: 0 auto;
+  text-align: center;
+  padding: 48px 0; }
+
+.header-input-container {
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between; }
+
+.header__input {
+  padding: 4px 0;
+  width: 100%;
+  max-width: 200px; }
