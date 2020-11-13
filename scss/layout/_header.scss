@@ -1,6 +1,7 @@
 .header-container {
   background-color: $backgroundColor;
   max-width: 1200px;
+  font-family: "Lato", sans-serif;
   background-color: rgba(138, 199, 255, 0.034);
   margin: 0 auto;
 }
@@ -24,8 +25,14 @@
   justify-content: space-between;
 }
 
+.header__select {
+  padding: 4px 0;
+  width: 100%;
+  max-width: 230px;
+}
+
 .header__input {
   padding: 4px 0;
   width: 100%;
-  max-width: 200px;
+  max-width: 330px;
 }
