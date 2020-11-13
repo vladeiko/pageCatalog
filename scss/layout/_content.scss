@@ -11,6 +11,11 @@
   font-weight: normal;
 }
 
+.content__title {
+  font-size: 24px;
+  padding: 10px 0 15px 0;
+}
+
 .content-box {
   display: flex;
   justify-content: space-between;
@@ -18,7 +23,7 @@
 }
 
 .content-box__element {
-  margin: 10px 0;
+  margin: 15px 0 40px 0;
 }
 
 .img {
